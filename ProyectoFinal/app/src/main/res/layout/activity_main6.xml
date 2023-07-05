@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C0FDFB"
+        android:backgroundTint="#C0FDFB" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:src="@drawable/check"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30sp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="348dp"
+        android:layout_height="493dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70sp"
+        android:background="@drawable/border_rounded">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="244dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="32dp"
+            android:text="BOLETO DE VENTA DE PASAJE"
+            android:textAlignment="center"
+            android:textColor="@color/color1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBoleta"
+            android:layout_width="269dp"
+            android:layout_height="232dp"
+            android:layout_marginTop="32dp"
+            android:padding="10sp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <Button
+            android:id="@+id/btnCierre"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_rounded"
+            android:text="Cerrar Sesión"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.555"
+            tools:ignore="UnknownId" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
